@@ -1,4 +1,4 @@
-package com.example.numbercounter;
+package com.example.numbercounter.application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

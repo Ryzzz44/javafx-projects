@@ -1,4 +1,4 @@
-package com.example.numbercounter;
+package com.example.numbercounter.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
