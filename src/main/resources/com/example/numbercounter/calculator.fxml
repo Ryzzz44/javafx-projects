@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="12.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.numbercounter.CalculatorController">
+   <children>
+      <HBox fillHeight="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="100.0" spacing="100.0">
+         <children>
+            <Label text="1st number">
+               <HBox.margin>
+                  <Insets right="110.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="2nd Number" />
+            <Label text="Result" />
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <TextField fx:id="tfNumber1" prefHeight="35.0" prefWidth="115.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+            <ComboBox fx:id="cbOperations" prefHeight="35.0" prefWidth="108.0" />
+            <TextField fx:id="tfNumber2" prefHeight="35.0" prefWidth="114.0" />
+            <Label fx:id="lblResult" alignment="CENTER" prefHeight="35.0" prefWidth="106.0" text="0" />
+         </children>
+      </HBox>
+      <Button fx:id="btnCompute" mnemonicParsing="false" onAction="#compute" text="Compute Result" />
+   </children>
+</VBox>
